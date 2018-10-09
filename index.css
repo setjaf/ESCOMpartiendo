@@ -2,11 +2,6 @@
 	margin:0;
 	padding: 0;
 	font-family:'Montserrat', sans-serif;
-	font-size: 1.2rem;
-}
-
-h1{
-	font-size: 2.5em;
 }
 
 header{
@@ -44,7 +39,7 @@ nav > ul > li{
 nav > ul > li > a, nav > ul > li > a:hover{
 	text-decoration: none;
 	color:#F1F1F5;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 nav > ul > li:hover{
@@ -126,8 +121,8 @@ nav > ul > li > a > p{
 
 .btn_red{
 	color: #fff;
-	background-color: #ED305C;
-	border-color: #ED305C;
+	background-color: #E31434;
+	border-color: #E31434;
 }
 
 .no_link, .no_link:hover{
@@ -139,4 +134,11 @@ nav > ul > li > a > p{
 a.btn:hover{
 	color:#FFF;
 	text-decoration: none;
+}
+
+.formulario{
+	width: 100%;
+	padding: 4rem 2rem;
+	box-sizing: border-box;
+	text-align: left;
 }
