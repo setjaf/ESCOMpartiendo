@@ -5,35 +5,44 @@
 }
 
 header{
-	width:10%;
-	height: 100vh;
+	width:100%;
+	height: 70px;
 	background-color: #1169a3;
 	position: fixed;
 	top:0;
 	left:0;
+	z-index: 1038;
 }
 
 nav{
+	padding: 0 20px;
 	width: 100%;
-	height: 100%;	
-	padding: 20px 0;
+	height: 100%;
 	display: flex !important;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	box-sizing: border-box;
 }
 
 nav > ul{
 	list-style: none;
-	width: 100%;
+	margin: 0;
+	height: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 
 nav > ul > li{
-	width: 100%;
+	display: block;
+	height: 100%;
 }
 
 nav > ul > li > a, nav > ul > li > a:hover{
@@ -47,17 +56,19 @@ nav > ul > li:hover{
 }
 
 nav > ul > li > a > p{
-	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+	padding: 0 10px;
 	text-align: center;
 }
 
 .logos{
-	width: 100%;
+	width: 20%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	position: absolute;
-	bottom: 10px;
 }
 
 .logo_escom, .logo_ipn{
@@ -78,8 +89,7 @@ nav > ul > li > a > p{
 
 .contenedor{
 
-	width: 80%;
-	float: right;
+	width: 100%;
 
 }
 
@@ -106,7 +116,6 @@ nav > ul > li > a > p{
 }
 
 .compartir{
-	height: 100vh;	
 	max-height: 720px;
 }
 
