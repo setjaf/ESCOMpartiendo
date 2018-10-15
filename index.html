@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
-	<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="iconfont/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="iconfont/css/all.css">-->
 
 </head>
 
@@ -115,7 +115,7 @@
 					<form class="form-row justify-content-end">
 						<div class="form-group col-12">
 							<label for="">Correo electrónico:</label>
-							<input type="text" class="form-control" name="correo_contacto">
+							<input type="email" class="form-control" name="correo_contacto" placeholder="ejemplo@correo.com" pattern="[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,6}">
 						</div>
 						<div class="form-group col-12">
 							<label for="">Motivo de contacto:</label>
@@ -153,15 +153,27 @@
 						<form class="form-row justify-content-end">
 							<div class="form-group col-12">
 								<label for="">Correo electrónico:</label>
-								<input type="text" class="form-control" name="correo_contacto">
+								<input type="email" class="form-control" name="correo_contacto" placeholder="ejemplo@correo.com" pattern="[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,6}" autocomplete="email">
 							</div>
 							<div class="form-group col-12">
-								<label for="">Motivo de contacto:</label>
-								<input type="text" class="form-control" name="correo_contacto">
+								<label for="">Contraseña:</label>
+								<input type="password" class="form-control" placeholder="Escribe tu nueva contraseña">
 							</div>
 							<div class="form-group col-12">
-								<label for="">Mensaje:</label>
-								<textarea name="mensaje_contacto" id="mensaje_contacto" class="form-control"></textarea>
+								<label for="">Nombre(s):</label>
+								<input type="text" class="form-control" name="nombre" autocomplete="give-name" placeholder="Juan">
+							</div>
+							<div class="form-group col-12">
+								<label for="">Apellido Paterno:</label>
+								<input type="text" class="form-control" name="paterno" autocomplete="family-name" placeholder="Pérez">
+							</div>
+							<div class="form-group col-12">
+								<label for="">Apellido Materno:</label>
+								<input type="text" class="form-control" name="materno" autocomplete="family-name" placeholder="Rodíguez">
+							</div>
+							<div class="form-group col-12">
+								<label for="">No. Boleta:</label>
+								<input type="text" class="form-control" name="boleta" pattern="[0-9]{10}" placeholder="0000000000">
 							</div>
 							<div class="form-group">
 								<input type="submit" value="Enviar" class="btn btn_red">
@@ -172,15 +184,27 @@
 					  	<form class="form-row justify-content-end">
 							<div class="form-group col-12">
 								<label for="">Correo electrónico:</label>
-								<input type="text" class="form-control" name="correo_contacto">
+								<input type="email" class="form-control" name="correo_contacto" placeholder="ejemplo@correo.com" pattern="[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,6}" autocomplete="email">
 							</div>
 							<div class="form-group col-12">
-								<label for="">Motivo de contacto:</label>
-								<input type="text" class="form-control" name="correo_contacto">
+								<label for="">Contraseña:</label>
+								<input type="password" class="form-control" placeholder="Escribe tu nueva contraseña">
 							</div>
 							<div class="form-group col-12">
-								<label for="">Mensaje:</label>
-								<textarea name="mensaje_contacto" id="mensaje_contacto" class="form-control"></textarea>
+								<label for="">Nombre(s):</label>
+								<input type="text" class="form-control" name="nombre" autocomplete="give-name" placeholder="Juan">
+							</div>
+							<div class="form-group col-12">
+								<label for="">Apellido Paterno:</label>
+								<input type="text" class="form-control" name="paterno" autocomplete="family-name" placeholder="Pérez">
+							</div>
+							<div class="form-group col-12">
+								<label for="">Apellido Materno:</label>
+								<input type="text" class="form-control" name="materno" autocomplete="family-name" placeholder="Rodíguez">
+							</div>
+							<div class="form-group col-12">
+								<label for="">CURP:</label>
+								<input type="text" class="form-control" name="boleta" pattern="^[A-Z]{4}\d{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z]{6}(\d|[A-Z])\d$" placeholder="0000000000">
 							</div>
 							<div class="form-group">
 								<input type="submit" value="Enviar" class="btn btn_red">
@@ -235,8 +259,8 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
-	<script src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--<script src="bootstrap-4.1.1/js/bootstrap.min.js"></script>-->
 	<script src="index.js"></script>
 
 </body>
